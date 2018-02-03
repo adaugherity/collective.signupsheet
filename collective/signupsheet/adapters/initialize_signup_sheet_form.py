@@ -144,19 +144,22 @@ class InitializeSignupSheetForm(object):
                                   mapping={'title': form_name}),
                                 context=self.form.REQUEST,)
             mailer.setMsg_subject(subject)
-            mailer.setBody_pt(MANAGER_MAIL % translate(
-                               _(u'manager_subscription_mail',
+            mailer.setBody_pt(MANAGER_MAIL % (
+                    translate(_(u'manager_subscription_mail_header',
                                 default=u"""<p>
-    New registrant registered to <tal:s tal:content="here/aq_inner/aq_parent/Title" />
+    New registrant registered to <tal:s tal:content="here/aq_inner/aq_parent/Title" />:
 </p>
-
-<p>
+"""),
+                                context=self.form.REQUEST),
+                    translate(_(u'manager_subscription_mail_footer',
+                                default=u"""<p>
     Please check current registrants status at:
     <a href="" tal:attributes="href string:${here/aq_inner/aq_parent/absolute_url}/view_registrants"
        tal:content="string:${here/aq_inner/aq_parent/absolute_url}/view_registrants">
     </a>
 </p>"""),
-                                context=self.form.REQUEST),)
+                                context=self.form.REQUEST)
+                    ) )
             mailer.setExecCondition("python: here.restrictedTraverse('@@check_manager_mail_form')()")
             self.form._pfFixup(mailer)
 

@@ -39,6 +39,15 @@ MANAGER_MAIL = u"""<html xmlns="http://www.w3.org/1999/xhtml">
 
 %s
 
+<dl tal:condition="options/wrappedFields|nothing">
+    <tal:block repeat="field options/wrappedFields">
+        <dt tal:content="field/fgField/widget/label" />
+        <dd tal:content="structure python:field.htmlValue(request)" />
+    </tal:block>
+</dl>
+
+%s
+
 </body>
 </html>
 """
