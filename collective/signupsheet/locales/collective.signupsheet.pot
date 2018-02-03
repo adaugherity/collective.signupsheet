@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-01-18 12:58+0000\n"
+"POT-Creation-Date: 2018-02-02 23:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.signupsheet\n"
 
+#: ../configure.zcml:28
 msgid "A solution for manage signup attendance to events"
 msgstr ""
 
@@ -56,6 +57,10 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
+#: ../configure.zcml:53
+msgid "Migrate SignupSheet to version 0.2"
+msgstr ""
+
 #: ../browsers/registrants_data.py:175
 msgid "No file loaded"
 msgstr ""
@@ -68,12 +73,24 @@ msgstr ""
 msgid "Registration deadline"
 msgstr ""
 
+#: ../configure.zcml:36
+msgid "Remove collective.signupsheet"
+msgstr ""
+
 #: ../browsers/registrants_notification.pt:141
 msgid "Send"
 msgstr ""
 
 #: ../profiles/default/types/SignupSheet.xml
 msgid "Signup Sheet"
+msgstr ""
+
+#: ../configure.zcml:28
+msgid "SignupSheet"
+msgstr ""
+
+#: ../configure.zcml:36
+msgid "SignupSheet: uninstall"
 msgstr ""
 
 #: ../skins/collective_signupsheet/ss_base_view_p3.cpt:115
@@ -229,9 +246,14 @@ msgstr ""
 msgid "mailer_registration_subject_overrides_manager"
 msgstr ""
 
-#. Default: "<p>\n    New registrant registered to <tal:s tal:content=\"here/aq_inner/aq_parent/Title\" />\n</p>\n\n<p>\n    Please check current registrants status at:\n    <a href=\"\" tal:attributes=\"href string:${here/aq_inner/aq_parent/absolute_url}/view_registrants\"\n       tal:content=\"string:${here/aq_inner/aq_parent/absolute_url}/view_registrants\">\n    </a>\n</p>"
+#. Default: "<p>\n    Please check current registrants status at:\n    <a href=\"\" tal:attributes=\"href string:${here/aq_inner/aq_parent/absolute_url}/view_registrants\"\n       tal:content=\"string:${here/aq_inner/aq_parent/absolute_url}/view_registrants\">\n    </a>\n</p>"
+#: ../adapters/initialize_signup_sheet_form.py:154
+msgid "manager_subscription_mail_footer"
+msgstr ""
+
+#. Default: "<p>\n    New registrant registered to <tal:s tal:content=\"here/aq_inner/aq_parent/Title\" />:\n</p>\n"
 #: ../adapters/initialize_signup_sheet_form.py:148
-msgid "manager_subscription_mail"
+msgid "manager_subscription_mail_header"
 msgstr ""
 
 #. Default: "Message is required. Please provide it"
@@ -260,7 +282,7 @@ msgid "pfg_registrants_title"
 msgstr ""
 
 #. Default: "Thank You"
-#: ../adapters/initialize_signup_sheet_form.py:168
+#: ../adapters/initialize_signup_sheet_form.py:171
 msgid "pfg_thankyou_title"
 msgstr ""
 
@@ -384,7 +406,7 @@ msgid "text_registration_full"
 msgstr ""
 
 #. Default: "Thank you for registering, we will contact you shortly. <br/>\nYou provided the following information:"
-#: ../adapters/initialize_signup_sheet_form.py:171
+#: ../adapters/initialize_signup_sheet_form.py:174
 msgid "thanks_prologue"
 msgstr ""
 
@@ -405,4 +427,3 @@ msgstr ""
 #: ../browsers/view_registrants.pt:21
 msgid "view_registrants"
 msgstr ""
-
