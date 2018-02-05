@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-02-02 23:11+0000\n"
+"POT-Creation-Date: 2018-02-05 21:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,9 +97,9 @@ msgstr ""
 msgid "The registration is closed"
 msgstr ""
 
-#. Default: "Don't notify registrants"
+#. Default: "Notify registrants"
 #: ../browsers/import_registrants.pt:39
-msgid "avoid_mail_notification"
+msgid "import_notification"
 msgstr ""
 
 #. Default: "Colon"

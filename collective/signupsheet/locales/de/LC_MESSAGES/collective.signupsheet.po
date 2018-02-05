@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
-"POT-Creation-Date: 2018-02-02 23:11+0000\n"
+"POT-Creation-Date: 2018-02-05 21:32+0000\n"
 "PO-Revision-Date: 2013-01-16 13:45 +ZONE\n"
 "Last-Translator: Stephan Klinger <staeff@arcor.de>\n"
 "Language-Team: de <staeff@arcor.de>\n"
@@ -95,10 +95,10 @@ msgstr ""
 msgid "The registration is closed"
 msgstr "Die Anmeldung ist geschlossen"
 
-#. Default: "Don't notify registrants"
+#. Default: "Notify registrants"
 #: ../browsers/import_registrants.pt:39
-msgid "avoid_mail_notification"
-msgstr "Teilnehmer nicht benachrichtigen"
+msgid "import_notification"
+msgstr "Teilnehmer benachrichtigen"
 
 #. Default: "Colon"
 #: ../browsers/registrants_data_export.pt:47

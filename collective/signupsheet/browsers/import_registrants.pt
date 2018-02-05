@@ -35,8 +35,8 @@
                 <input type="file" id="uploaded_csv" name="uploaded_csv"/>
             </div>
             <div class="field">
-                <input type="checkbox" checked="on" id="avoid_mail_notification" name="avoid_mail_notification" />
-                <label for="avoid_mail_notification" i18n:translate="avoid_mail_notification">Don't notify registrants</label><br />
+                <input type="checkbox" id="import_notification" name="import_notification" />
+                <label for="import_notification" i18n:translate="import_notification">Notify registrants</label><br />
                   <input class="context" type="submit" value="Import" name="importRegistrants" i18n:attributes="value" />
           </div>
           </form>

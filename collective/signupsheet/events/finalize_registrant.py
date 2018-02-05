@@ -61,5 +61,5 @@ def finalize_registrant_creation(obj, event):
                                                                              'review_state')))
         # If we are importing registrants from csv file, this flag allow to decide
         # to send or not notification mail
-        if 'avoid_mail_notification' not in obj.REQUEST.form:
+        if 'import_notification' in obj.REQUEST.form:
             adapter.onSuccess(fields, obj.REQUEST)
